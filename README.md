@@ -1,54 +1,74 @@
 <div align="center">
 
-# Musab AbuKaraki
+<img src="./header.svg" width="860" alt="musab@github ~ $ whoami: Musab AbuKaraki, Data Science & AI graduate" />
 
-**Data Science & AI graduate turning data into decisions — analytics, business intelligence, and automation.**
+<br>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/musababukaraki)
 [![Email](https://img.shields.io/badge/Email-musababukaraki1%40gmail.com-333?style=flat&logo=gmail&logoColor=white)](mailto:musababukaraki1@gmail.com)
+[![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)](#-featured-work)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](#-featured-work)
+
+<br>
+
+<h3><code>musab@github ~ $ ./contributions.sh</code></h3>
+<img src="./contrib-heatmap.svg" width="860" alt="Contribution graph for the last year" />
+
+<br><br>
+
+<h3><code>musab@github ~ $ neofetch</code></h3>
+<table>
+  <tr>
+    <td valign="top"><img src="./avatar-ascii.svg" width="370" alt="ASCII wordmark and rising bar chart" /></td>
+    <td valign="top"><img src="./info-card.svg" width="490" alt="neofetch-style card: role, stack, highlights, contact" /></td>
+  </tr>
+</table>
 
 </div>
 
----
+<br>
 
-## About
+## ▍ Featured work
 
-I work at the intersection of data, analytics, and AI: cleaning and modeling
-data, writing SQL and Python to answer specific business questions, building
-BI models and dashboards, and layering automation and AI on top of verified
-analysis — not in place of it. My background is a Data Science & AI degree;
-my focus is analytics engineering, business intelligence, and practical AI
-workflows.
+Every project is a full case study: the question, the method, reconciled results, and stated limitations. Numbers are traceable to the source data and the code in each repository.
 
-**Analyze → Visualize → Predict → Automate → Augment → Deliver** — the five
-projects below each prove one link in that chain, end to end, with every
-number reproducible from the code in that repository.
+### Newest: Power BI data products on official public data
 
-## Featured work
-
-| Project | Category | What it proves |
+| Project | What it is | Proof |
 |---|---|---|
-| [retail-performance-intelligence](https://github.com/musab-abukaraki-66/retail-performance-intelligence) | Data Analytics | SQL (window functions, CTEs, RFM segmentation) + Python — 5 business questions, each answered by an executed, verified query |
-| [saas-subscription-bi](https://github.com/musab-abukaraki-66/saas-subscription-bi) | Business Intelligence | Star schema, DAX measures, MRR/churn/cohort-retention analysis — every DAX measure cross-verified against executed SQL |
-| [aerial-car-detection](https://github.com/musab-abukaraki-66/aerial-car-detection) | Machine Learning | YOLOv8s fine-tuned for aerial car detection — 96.78% mAP@0.5, full pipeline + CLI + desktop GUI |
-| [support-ops-report-automation](https://github.com/musab-abukaraki-66/support-ops-report-automation) | Automation | Validates, cleans, and turns a raw weekly export into Excel + PDF reports automatically — 9 passing unit tests |
-| [ai-augmented-anomaly-insights](https://github.com/musab-abukaraki-66/ai-augmented-anomaly-insights) | AI + Analytics | Statistical anomaly detection with an AI narration layer that's structurally blocked from inventing numbers — enforced by a tested validator, not just a prompt |
+| **[jordanian-unemployment-2025-2026](https://github.com/musab-abukaraki-66/jordanian-unemployment-2025-2026)** · [live preview](https://musab-abukaraki-66.github.io/jordanian-unemployment-2025-2026/) | A Jordanians-only, source-traced Power BI data story on official Department of Statistics releases | Ten flat quarters at 21.0–21.5%, and a three-page report that separates definitions, periods, gender and age |
+| **[hospital-atlas-ed-pressure-room](https://github.com/musab-abukaraki-66/hospital-atlas-ed-pressure-room)** | Interactive report on real CMS Care Compare data: a fingerprint atlas of hospitals plus an ED pressure room | 3,107 hospitals drawn as roses with DAX that returns SVG. No custom visuals, no Deneb |
+| **[federal-contracting-intelligence](https://github.com/musab-abukaraki-66/federal-contracting-intelligence)** | Executive Power BI product over the complete FY2025 U.S. federal prime-contract record | 6.64M contract actions and $793.2bn obligated, from a 13.6 GB archive into a 187 MB model that refreshes in about two minutes |
+| **[jordan-economic-pulse](https://github.com/musab-abukaraki-66/jordan-economic-pulse)** | Four-page case study of Jordan's external gap, growth and prices (World Bank and Central Bank of Jordan) | Star-schema model with DAX reconciled to an independent baseline |
 
-Each README is a full case study: problem, method, verified results, business
-interpretation, and stated limitations — not a notebook dump.
+### Full-stack and machine learning
 
-## Toolbox
+| Project | What it is | Proof |
+|---|---|---|
+| **[orbit](https://github.com/musab-abukaraki-66/orbit)** · [live demo](https://orbit-ten-cyan.vercel.app) | Real-time collaborative project management for small teams | Next.js 16, Supabase (Postgres, Auth, RLS, Realtime), Playwright e2e, deployed on Vercel |
+| **[aerial-car-detection](https://github.com/musab-abukaraki-66/aerial-car-detection)** | YOLOv8s fine-tuned to detect cars in aerial imagery | 96.78% mAP@0.5, 94.92% precision, 95.01% recall; full pipeline, CLI and desktop GUI |
+
+### Analytics, BI and automation foundations
+
+| Project | What it is | Proof |
+|---|---|---|
+| **[retail-performance-intelligence](https://github.com/musab-abukaraki-66/retail-performance-intelligence)** | SQL and Python retail analytics | Window functions, CTEs and RFM segmentation; five business questions, each answered by an executed query |
+| **[saas-subscription-bi](https://github.com/musab-abukaraki-66/saas-subscription-bi)** | Subscription BI: star schema, KPI design, dashboard analysis | MRR, churn and cohort retention; every DAX measure cross-checked against executed SQL |
+| **[support-ops-report-automation](https://github.com/musab-abukaraki-66/support-ops-report-automation)** | Validate, clean and transform a raw weekly export into Excel and PDF reports | 9 passing unit tests |
+| **[ai-augmented-anomaly-insights](https://github.com/musab-abukaraki-66/ai-augmented-anomaly-insights)** | Statistical anomaly detection with an AI narration layer | A tested validator blocks the model from inventing numbers |
+
+## ▍ Toolbox
 
 | Area | Tools |
 |---|---|
-| **Languages** | Python · SQL |
-| **Data & Analysis** | pandas · NumPy · scikit-learn · Excel · statistics |
-| **Business Intelligence** | Power BI · DAX · Power Query · star-schema data modeling |
-| **Machine Learning** | PyTorch · Ultralytics YOLOv8 · scikit-learn |
-| **Automation** | Python pipelines · openpyxl · validation/logging · pytest |
-| **AI** | Anthropic API · prompt-constrained generation · output verification |
-| **Tooling** | Git/GitHub · SQLite · Jupyter |
+| **Business intelligence** | Power BI (PBIP/PBIR) · DAX · Power Query · star-schema modelling · SVG-in-DAX visuals |
+| **Data and analysis** | Python · SQL · pandas · NumPy · scikit-learn · Excel · statistics |
+| **Machine learning** | PyTorch · Ultralytics YOLOv8 |
+| **Web and data engineering** | TypeScript · Next.js · Supabase / Postgres · Playwright · Vercel |
+| **Practice** | Source tracing · reconciliation to a baseline · pytest · Git/GitHub · GitHub Actions |
 
-## Get in touch
+## ▍ Get in touch
 
 [LinkedIn](https://www.linkedin.com/in/musababukaraki) · [musababukaraki1@gmail.com](mailto:musababukaraki1@gmail.com)
+
+<sub>The art above is generated by the scripts in [`scripts/`](scripts). The contribution graph refreshes daily from public data with GitHub Actions: no third-party stats service, no token, no JavaScript.</sub>

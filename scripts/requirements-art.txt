@@ -1,0 +1,6 @@
+-r requirements.txt
+# only needed to regenerate the portrait / card / header locally
+pillow
+numpy
+# optional, for --cutout on a photo:
+# rembg
