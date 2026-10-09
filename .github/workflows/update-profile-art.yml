@@ -8,6 +8,10 @@
     branches: [master]
     paths: ["scripts/**", ".github/workflows/update-profile-art.yml"]
 
+concurrency:
+  group: profile-art
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
