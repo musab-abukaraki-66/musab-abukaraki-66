@@ -1,10 +1,11 @@
-﻿"""Turn an image into a monochrome ASCII SVG that prints row by row (SMIL, plays once).
+"""Turn an image into a monochrome ASCII SVG that prints row by row (SMIL, plays once).
 
     python scripts/make_ascii_svg.py                 # built-in monogram + rising-bars emblem
     python scripts/make_ascii_svg.py --photo me.jpg  # your own photo instead
 
 Photos get autocontrast + histogram equalisation first, so a flat-lit face still has
-highlights. Background removal is optional: run `pip install rembg` and pass --cutout.
+highlights. --cutout removes a plain backdrop (OpenCV GrabCut, or rembg if installed);
+--crop zooms on the face.
 """
 import argparse
 from pathlib import Path
@@ -63,16 +64,55 @@ def emblem() -> Image.Image:
     glow = img.filter(ImageFilter.GaussianBlur(7))
     return Image.fromarray(np.maximum(np.asarray(img), (np.asarray(glow) * 0.5).astype(np.uint8)))
 
-def from_photo(path: str, cutout: bool) -> Image.Image:
+def cutout_grabcut(im: Image.Image) -> Image.Image:
+    """Dependency-light background removal (OpenCV GrabCut) for plain studio backdrops."""
+    import cv2
+
+    rgb = np.asarray(im.convert("RGB"))
+    h, w = rgb.shape[:2]
+    scale = 640 / max(h, w)
+    small = cv2.resize(rgb, (int(w * scale), int(h * scale)), interpolation=cv2.INTER_AREA)
+    sh, sw = small.shape[:2]
+    mask = np.full((sh, sw), cv2.GC_PR_BGD, np.uint8)
+    mask[: int(sh * 0.06), :] = cv2.GC_BGD
+    mask[:, : int(sw * 0.06)] = cv2.GC_BGD
+    mask[:, int(sw * 0.94):] = cv2.GC_BGD
+    mask[int(sh * 0.12): int(sh * 0.97), int(sw * 0.27): int(sw * 0.73)] = cv2.GC_PR_FGD
+    mask[int(sh * 0.30): int(sh * 0.80), int(sw * 0.36): int(sw * 0.64)] = cv2.GC_FGD
+    bgd, fgd = np.zeros((1, 65)), np.zeros((1, 65))
+    cv2.grabCut(small, mask, None, bgd, fgd, 6, cv2.GC_INIT_WITH_MASK)
+    fg = np.where((mask == cv2.GC_FGD) | (mask == cv2.GC_PR_FGD), 255, 0).astype(np.uint8)
+    fg = cv2.GaussianBlur(cv2.morphologyEx(fg, cv2.MORPH_CLOSE, np.ones((9, 9), np.uint8)), (0, 0), 2.5)
+    fg = cv2.resize(fg, (w, h), interpolation=cv2.INTER_LINEAR)
+    return Image.fromarray((rgb.astype(float) * (fg[..., None] / 255.0)).astype(np.uint8))
+
+
+def from_photo(path: str, cutout: bool, crop: tuple[float, ...] | None = None) -> Image.Image:
     im = Image.open(path).convert("RGB")
     if cutout:
-        from rembg import remove  # optional heavy dependency
-        im = remove(im)
-        bg = Image.new("RGBA", im.size, (0, 0, 0, 255))
-        im = Image.alpha_composite(bg, im.convert("RGBA")).convert("RGB")
-    g = ImageOps.equalize(ImageOps.autocontrast(im.convert("L"), cutoff=2))
-    g = ImageOps.fit(g, (512, 544), method=Image.LANCZOS, centering=(0.5, 0.35))
-    return g
+        try:
+            from rembg import remove  # best quality when installed
+
+            cut = remove(im)
+            im = Image.alpha_composite(Image.new("RGBA", cut.size, (0, 0, 0, 255)), cut.convert("RGBA")).convert("RGB")
+        except ImportError:
+            im = cutout_grabcut(im)
+    if crop:  # fractional (x0, y0, x1, y1) box: zoom on the face
+        w, h = im.size
+        im = im.crop((int(crop[0] * w), int(crop[1] * h), int(crop[2] * w), int(crop[3] * h)))
+    g = ImageOps.autocontrast(im.convert("L"), cutoff=1)
+    try:
+        import cv2
+
+        g = Image.fromarray(cv2.createCLAHE(clipLimit=3.0, tileGridSize=(6, 6)).apply(np.asarray(g)))
+    except ImportError:
+        g = ImageOps.equalize(g)
+    g = ImageOps.fit(g, (512, 544), method=Image.LANCZOS, centering=(0.5, 0.3))
+    # Flat studio lighting washes a face to one tone: keep half the base, boost the detail
+    # (eyes, brows, nose, mouth) with a high-pass so features survive at ~100 columns.
+    a = np.asarray(g, dtype=float)
+    base = np.asarray(g.filter(ImageFilter.GaussianBlur(10)), dtype=float)
+    return Image.fromarray(np.clip(0.55 * a + 2.4 * (a - base) + 8, 0, 255).astype(np.uint8))
 
 
 def to_rows(img: Image.Image) -> list[str]:
@@ -99,7 +139,7 @@ def build(rows: list[str]) -> str:
             f'<animate attributeName="width" from="0" to="{w:.1f}" dur="0.55s" begin="{t0}s" fill="freeze"/></rect></clipPath>'
         )
         body.append(
-            f'<text x="{x:.1f}" y="{y:.1f}" font-size="9.4" fill="{FG}" textLength="{w:.1f}" '
+            f'<text x="{x:.1f}" y="{y:.1f}" font-size="{CW / 0.6:.2f}" fill="{FG}" textLength="{w:.1f}" '
             f'lengthAdjust="spacingAndGlyphs" clip-path="url(#r{i})" xml:space="preserve">{esc(text)}</text>'
         )
         body.append(  # block cursor riding the wipe edge, gone when the row is done
@@ -115,8 +155,12 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--photo")
     ap.add_argument("--cutout", action="store_true")
+    ap.add_argument("--crop", help="x0,y0,x1,y1 as fractions, e.g. 0.12,0.04,0.88,0.84")
     a = ap.parse_args()
-    img = from_photo(a.photo, a.cutout) if a.photo else emblem()
+    global COLS, ROWS, CW, LH
+    if a.photo:  # finer grid for faces: 100x53 characters
+        COLS, ROWS, CW, LH = 100, 53, 3.56, 7.0
+    img = from_photo(a.photo, a.cutout, tuple(map(float, a.crop.split(","))) if a.crop else None) if a.photo else emblem()
     rows = to_rows(img)
     (ROOT / "avatar-ascii.svg").write_text(build(rows), encoding="utf-8")
     print("\n".join(rows))

@@ -4,16 +4,18 @@ from pathlib import Path
 from theme import AMBER, BLUE, DIM, FG, GREEN, HANDLE, MUTED, PINK, esc, frame
 
 ROOT = Path(__file__).resolve().parent.parent
-W, H = 860, 272
+W, H = 860, 322
 
 LEFT = [
     ("Role", "Data Science & AI graduate"),
+    ("Base", "Amman, Jordan"),
     ("Focus", "BI, analytics engineering, automation"),
     ("Stack", "Power BI / PBIP, DAX, Python, SQL"),
     ("Also", "TypeScript, Next.js, Supabase"),
     ("Method", "source-traced, reconciled, reproducible"),
     ("Mail", "musababukaraki1@gmail.com"),
-    ("Web", "linkedin.com/in/musababukaraki"),
+    ("Site", "musab-abukaraki.vercel.app"),
+    ("LinkedIn", "linkedin.com/in/musababukaraki"),
 ]
 RIGHT = [
     "6.64M federal contract actions -> 187 MB Power BI model",
@@ -37,7 +39,7 @@ def main() -> None:
         y = y0 + 10 + i * lh
         out.append(
             f'<text class="ln" style="animation-delay:{0.2 + i * 0.1:.1f}s" x="28" y="{y}" font-size="12" fill="{FG}" xml:space="preserve">'
-            f'<tspan fill="{BLUE}" font-weight="700">{esc(k.ljust(8))}</tspan>{esc(v)}</text>'
+            f'<tspan fill="{BLUE}" font-weight="700">{esc(k.ljust(9))}</tspan>{esc(v)}</text>'
         )
     for i, v in enumerate(RIGHT):
         y = y0 + 10 + i * lh * 1.2

@@ -1,4 +1,4 @@
-﻿"""Scrape the public contribution calendar (no token, no GraphQL) into data/contributions.json."""
+"""Scrape the public contribution calendar (no token, no GraphQL) into data/contributions.json."""
 import json
 import os
 import re
