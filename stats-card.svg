@@ -15,7 +15,7 @@
   <text x="245.0" y="22" font-size="12" fill="#8b949e" text-anchor="middle">stats.live</text>
 <g class="t" style="animation-delay:0.15s"><rect x="20" y="52" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="34" y="72" font-size="10" fill="#8b949e">current streak</text><text x="34" y="102" font-size="26" font-weight="700" fill="#39d353">3</text><text x="34" y="118" font-size="9" fill="#484f58">days</text></g>
 <g class="t" style="animation-delay:0.25s"><rect x="251" y="52" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="265" y="72" font-size="10" fill="#8b949e">longest streak</text><text x="265" y="102" font-size="26" font-weight="700" fill="#39d353">3</text><text x="265" y="118" font-size="9" fill="#484f58">days</text></g>
-<g class="t" style="animation-delay:0.35s"><rect x="20" y="136" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="34" y="156" font-size="10" fill="#8b949e">contributions</text><text x="34" y="186" font-size="26" font-weight="700" fill="#58a6ff">77</text><text x="34" y="202" font-size="9" fill="#484f58">last 12 months</text></g>
+<g class="t" style="animation-delay:0.35s"><rect x="20" y="136" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="34" y="156" font-size="10" fill="#8b949e">contributions</text><text x="34" y="186" font-size="26" font-weight="700" fill="#58a6ff">78</text><text x="34" y="202" font-size="9" fill="#484f58">last 12 months</text></g>
 <g class="t" style="animation-delay:0.45s"><rect x="251" y="136" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="265" y="156" font-size="10" fill="#8b949e">active days</text><text x="265" y="186" font-size="26" font-weight="700" fill="#58a6ff">13</text><text x="265" y="202" font-size="9" fill="#484f58">of 370</text></g>
 <g class="t" style="animation-delay:0.55s"><rect x="20" y="220" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="34" y="240" font-size="10" fill="#8b949e">best day</text><text x="34" y="270" font-size="26" font-weight="700" fill="#e3b341">13</text><text x="34" y="286" font-size="9" fill="#484f58">Sep 22</text></g>
 <g class="t" style="animation-delay:0.65s"><rect x="251" y="220" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="265" y="240" font-size="10" fill="#8b949e">weekly average</text><text x="265" y="270" font-size="26" font-weight="700" fill="#f778ba">1.5</text><text x="265" y="286" font-size="9" fill="#484f58">contributions / week</text></g>
@@ -49,7 +49,7 @@
 <rect class="b" x="410.0" y="344.0" width="11.0" height="82.0" rx="2" fill="#39d353" style="animation-delay:1.68s"><title>26 contributions</title></rect>
 <rect class="b" x="425.0" y="385.0" width="11.0" height="41.0" rx="2" fill="#39d353" style="animation-delay:1.71s"><title>13 contributions</title></rect>
 <rect class="b" x="440.0" y="403.9" width="11.0" height="22.1" rx="2" fill="#39d353" style="animation-delay:1.74s"><title>7 contributions</title></rect>
-<rect class="b" x="455.0" y="375.5" width="11.0" height="50.5" rx="2" fill="#39d353" style="animation-delay:1.77s"><title>16 contributions</title></rect>
+<rect class="b" x="455.0" y="372.4" width="11.0" height="53.6" rx="2" fill="#39d353" style="animation-delay:1.77s"><title>17 contributions</title></rect>
 <line x1="20" y1="429" x2="470" y2="429" stroke="#30363d"/>
 <text x="20" y="446" font-size="9" fill="#484f58">musab@github ~ $ stats --live  |  updated 2026-10-09</text>
 </svg>
