@@ -1,6 +1,6 @@
 {
  "user": "musab-abukaraki-66",
- "fetched": "2026-10-09",
+ "fetched": "2026-10-10",
  "days": [
   {
    "date": "2025-10-05",
@@ -1845,16 +1845,21 @@
   {
    "date": "2026-10-08",
    "level": 3,
-   "count": 8
+   "count": 7
   },
   {
    "date": "2026-10-09",
-   "level": 3,
-   "count": 8
+   "level": 2,
+   "count": 6
+  },
+  {
+   "date": "2026-10-10",
+   "level": 0,
+   "count": 0
   }
  ],
  "stats": {
-  "total": 78,
+  "total": 75,
   "current_streak": 3,
   "longest_streak": 3,
   "best_day": {
@@ -1876,7 +1881,7 @@
    "2026-07": 0,
    "2026-08": 11,
    "2026-09": 39,
-   "2026-10": 24
+   "2026-10": 21
   }
  }
 }
