@@ -43,10 +43,11 @@
 
 Newest first. Every project is a full case study: the question, the method, reconciled results, and stated limitations. Numbers are traceable to the source data and the code in each repository.
 
-### Newest: platforms, analytics and forecasting
+### Newest: websites, platforms, analytics and forecasting
 
 | Project | What it is | Proof |
 |---|---|---|
+| **[omerta-website](https://github.com/musab-abukaraki-66/omerta-website)** · [live preview](https://omerta-space.vercel.app) | Scroll-driven website for OMERTA, a satellite and space-technology brand | Astro and TypeScript, real-time three.js orbit scene, Playwright QA report; pre-launch preview |
 | **[signalforge](https://github.com/musab-abukaraki-66/signalforge)** | End-to-end e-commerce intelligence platform: data engineering, analytics, BI, ML and decision support | Reproducible Python and SQL foundation with CI; later stages are marked planned in its roadmap |
 | **[marketplace-operations-customer-experience-analytics](https://github.com/musab-abukaraki-66/marketplace-operations-customer-experience-analytics)** | Analytics case study on about 100k real e-commerce orders | SQL (DuckDB) and Python pipeline, data-quality gates, 13 business queries, CI |
 | **[Mizan](https://github.com/musab-abukaraki-66/Mizan)** | Forecasting lab for Jordan's monthly CPI, built from official statistics | Transparent baseline and statistical models; bilingual (Arabic and English) interface; CI |
