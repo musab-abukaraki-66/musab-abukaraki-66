@@ -13,16 +13,16 @@
   <circle cx="38" cy="18" r="5.5" fill="#ffbd2e"/>
   <circle cx="56" cy="18" r="5.5" fill="#27c93f"/>
   <text x="245.0" y="22" font-size="12" fill="#8b949e" text-anchor="middle">stats.live</text>
-<g class="t" style="animation-delay:0.15s"><rect x="20" y="52" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="34" y="72" font-size="10" fill="#8b949e">current streak</text><text x="34" y="102" font-size="26" font-weight="700" fill="#39d353">17</text><text x="34" y="118" font-size="9" fill="#484f58">days</text></g>
-<g class="t" style="animation-delay:0.25s"><rect x="251" y="52" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="265" y="72" font-size="10" fill="#8b949e">longest streak</text><text x="265" y="102" font-size="26" font-weight="700" fill="#39d353">17</text><text x="265" y="118" font-size="9" fill="#484f58">days</text></g>
-<g class="t" style="animation-delay:0.35s"><rect x="20" y="136" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="34" y="156" font-size="10" fill="#8b949e">contributions</text><text x="34" y="186" font-size="26" font-weight="700" fill="#58a6ff">120</text><text x="34" y="202" font-size="9" fill="#484f58">last 12 months</text></g>
-<g class="t" style="animation-delay:0.45s"><rect x="251" y="136" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="265" y="156" font-size="10" fill="#8b949e">active days</text><text x="265" y="186" font-size="26" font-weight="700" fill="#58a6ff">27</text><text x="265" y="202" font-size="9" fill="#484f58">of 371</text></g>
+<g class="t" style="animation-delay:0.15s"><rect x="20" y="52" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="34" y="72" font-size="10" fill="#8b949e">current streak</text><text x="34" y="102" font-size="26" font-weight="700" fill="#39d353">18</text><text x="34" y="118" font-size="9" fill="#484f58">days</text></g>
+<g class="t" style="animation-delay:0.25s"><rect x="251" y="52" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="265" y="72" font-size="10" fill="#8b949e">longest streak</text><text x="265" y="102" font-size="26" font-weight="700" fill="#39d353">18</text><text x="265" y="118" font-size="9" fill="#484f58">days</text></g>
+<g class="t" style="animation-delay:0.35s"><rect x="20" y="136" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="34" y="156" font-size="10" fill="#8b949e">contributions</text><text x="34" y="186" font-size="26" font-weight="700" fill="#58a6ff">121</text><text x="34" y="202" font-size="9" fill="#484f58">last 12 months</text></g>
+<g class="t" style="animation-delay:0.45s"><rect x="251" y="136" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="265" y="156" font-size="10" fill="#8b949e">active days</text><text x="265" y="186" font-size="26" font-weight="700" fill="#58a6ff">28</text><text x="265" y="202" font-size="9" fill="#484f58">of 365</text></g>
 <g class="t" style="animation-delay:0.55s"><rect x="20" y="220" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="34" y="240" font-size="10" fill="#8b949e">best day</text><text x="34" y="270" font-size="26" font-weight="700" fill="#e3b341">18</text><text x="34" y="286" font-size="9" fill="#484f58">Oct 14</text></g>
 <g class="t" style="animation-delay:0.65s"><rect x="251" y="220" width="219" height="74" rx="8" fill="#010409" stroke="#30363d"/><text x="265" y="240" font-size="10" fill="#8b949e">weekly average</text><text x="265" y="270" font-size="26" font-weight="700" fill="#f778ba">2.3</text><text x="265" y="286" font-size="9" fill="#484f58">contributions / week</text></g>
 <text x="20" y="318" font-size="11" fill="#c9d1d9">contributions / week <tspan fill="#484f58">(last 30 weeks)</tspan></text>
 <rect class="b" x="20.0" y="423.5" width="11.0" height="2.5" rx="2" fill="#21262d" style="animation-delay:0.90s"><title>0 contributions</title></rect>
-<rect class="b" x="35.0" y="423.5" width="11.0" height="2.5" rx="2" fill="#21262d" style="animation-delay:0.93s"><title>0 contributions</title></rect>
-<rect class="b" x="50.0" y="417.4" width="11.0" height="8.6" rx="2" fill="#39d353" style="animation-delay:0.96s"><title>4 contributions</title></rect>
+<rect class="b" x="35.0" y="417.4" width="11.0" height="8.6" rx="2" fill="#39d353" style="animation-delay:0.93s"><title>4 contributions</title></rect>
+<rect class="b" x="50.0" y="423.5" width="11.0" height="2.5" rx="2" fill="#21262d" style="animation-delay:0.96s"><title>0 contributions</title></rect>
 <rect class="b" x="65.0" y="423.5" width="11.0" height="2.5" rx="2" fill="#21262d" style="animation-delay:0.99s"><title>0 contributions</title></rect>
 <rect class="b" x="80.0" y="423.5" width="11.0" height="2.5" rx="2" fill="#21262d" style="animation-delay:1.02s"><title>0 contributions</title></rect>
 <rect class="b" x="95.0" y="423.5" width="11.0" height="2.5" rx="2" fill="#21262d" style="animation-delay:1.05s"><title>0 contributions</title></rect>
@@ -37,19 +37,19 @@
 <rect class="b" x="230.0" y="423.5" width="11.0" height="2.5" rx="2" fill="#21262d" style="animation-delay:1.32s"><title>0 contributions</title></rect>
 <rect class="b" x="245.0" y="423.5" width="11.0" height="2.5" rx="2" fill="#21262d" style="animation-delay:1.35s"><title>0 contributions</title></rect>
 <rect class="b" x="260.0" y="423.5" width="11.0" height="2.5" rx="2" fill="#21262d" style="animation-delay:1.38s"><title>0 contributions</title></rect>
-<rect class="b" x="275.0" y="423.5" width="11.0" height="2.5" rx="2" fill="#21262d" style="animation-delay:1.41s"><title>0 contributions</title></rect>
-<rect class="b" x="290.0" y="421.7" width="11.0" height="4.3" rx="2" fill="#39d353" style="animation-delay:1.44s"><title>2 contributions</title></rect>
-<rect class="b" x="305.0" y="406.6" width="11.0" height="19.4" rx="2" fill="#39d353" style="animation-delay:1.47s"><title>9 contributions</title></rect>
+<rect class="b" x="275.0" y="421.7" width="11.0" height="4.3" rx="2" fill="#39d353" style="animation-delay:1.41s"><title>2 contributions</title></rect>
+<rect class="b" x="290.0" y="406.6" width="11.0" height="19.4" rx="2" fill="#39d353" style="animation-delay:1.44s"><title>9 contributions</title></rect>
+<rect class="b" x="305.0" y="423.5" width="11.0" height="2.5" rx="2" fill="#21262d" style="animation-delay:1.47s"><title>0 contributions</title></rect>
 <rect class="b" x="320.0" y="423.5" width="11.0" height="2.5" rx="2" fill="#21262d" style="animation-delay:1.50s"><title>0 contributions</title></rect>
 <rect class="b" x="335.0" y="423.5" width="11.0" height="2.5" rx="2" fill="#21262d" style="animation-delay:1.53s"><title>0 contributions</title></rect>
 <rect class="b" x="350.0" y="423.5" width="11.0" height="2.5" rx="2" fill="#21262d" style="animation-delay:1.56s"><title>0 contributions</title></rect>
-<rect class="b" x="365.0" y="423.5" width="11.0" height="2.5" rx="2" fill="#21262d" style="animation-delay:1.59s"><title>0 contributions</title></rect>
-<rect class="b" x="380.0" y="369.9" width="11.0" height="56.1" rx="2" fill="#39d353" style="animation-delay:1.62s"><title>26 contributions</title></rect>
-<rect class="b" x="395.0" y="397.9" width="11.0" height="28.1" rx="2" fill="#39d353" style="animation-delay:1.65s"><title>13 contributions</title></rect>
-<rect class="b" x="410.0" y="410.9" width="11.0" height="15.1" rx="2" fill="#39d353" style="animation-delay:1.68s"><title>7 contributions</title></rect>
-<rect class="b" x="425.0" y="393.6" width="11.0" height="32.4" rx="2" fill="#39d353" style="animation-delay:1.71s"><title>15 contributions</title></rect>
-<rect class="b" x="440.0" y="344.0" width="11.0" height="82.0" rx="2" fill="#39d353" style="animation-delay:1.74s"><title>38 contributions</title></rect>
-<rect class="b" x="455.0" y="413.1" width="11.0" height="12.9" rx="2" fill="#39d353" style="animation-delay:1.77s"><title>6 contributions</title></rect>
+<rect class="b" x="365.0" y="369.9" width="11.0" height="56.1" rx="2" fill="#39d353" style="animation-delay:1.59s"><title>26 contributions</title></rect>
+<rect class="b" x="380.0" y="397.9" width="11.0" height="28.1" rx="2" fill="#39d353" style="animation-delay:1.62s"><title>13 contributions</title></rect>
+<rect class="b" x="395.0" y="410.9" width="11.0" height="15.1" rx="2" fill="#39d353" style="animation-delay:1.65s"><title>7 contributions</title></rect>
+<rect class="b" x="410.0" y="393.6" width="11.0" height="32.4" rx="2" fill="#39d353" style="animation-delay:1.68s"><title>15 contributions</title></rect>
+<rect class="b" x="425.0" y="344.0" width="11.0" height="82.0" rx="2" fill="#39d353" style="animation-delay:1.71s"><title>38 contributions</title></rect>
+<rect class="b" x="440.0" y="410.9" width="11.0" height="15.1" rx="2" fill="#39d353" style="animation-delay:1.74s"><title>7 contributions</title></rect>
+<rect class="b" x="455.0" y="423.5" width="11.0" height="2.5" rx="2" fill="#21262d" style="animation-delay:1.77s"><title>0 contributions</title></rect>
 <line x1="20" y1="429" x2="470" y2="429" stroke="#30363d"/>
-<text x="20" y="446" font-size="9" fill="#484f58">musab@github ~ $ stats --live  |  updated 2026-10-24</text>
+<text x="20" y="446" font-size="9" fill="#484f58">musab@github ~ $ stats --live  |  updated 2026-10-25</text>
 </svg>
