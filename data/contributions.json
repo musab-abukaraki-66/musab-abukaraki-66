@@ -1,42 +1,7 @@
 {
  "user": "musab-abukaraki-66",
- "fetched": "2026-11-21",
+ "fetched": "2026-11-22",
  "days": [
-  {
-   "date": "2025-11-16",
-   "level": 0,
-   "count": 0
-  },
-  {
-   "date": "2025-11-17",
-   "level": 0,
-   "count": 0
-  },
-  {
-   "date": "2025-11-18",
-   "level": 0,
-   "count": 0
-  },
-  {
-   "date": "2025-11-19",
-   "level": 0,
-   "count": 0
-  },
-  {
-   "date": "2025-11-20",
-   "level": 0,
-   "count": 0
-  },
-  {
-   "date": "2025-11-21",
-   "level": 0,
-   "count": 0
-  },
-  {
-   "date": "2025-11-22",
-   "level": 0,
-   "count": 0
-  },
   {
    "date": "2025-11-23",
    "level": 0,
@@ -1854,20 +1819,25 @@
   },
   {
    "date": "2026-11-21",
+   "level": 1,
+   "count": 1
+  },
+  {
+   "date": "2026-11-22",
    "level": 0,
    "count": 0
   }
  ],
  "stats": {
-  "total": 148,
-  "current_streak": 45,
-  "longest_streak": 45,
+  "total": 149,
+  "current_streak": 46,
+  "longest_streak": 46,
   "best_day": {
    "date": "2026-10-14",
    "level": 4,
    "count": 18
   },
-  "active_days": 55,
+  "active_days": 56,
   "months": {
    "2025-11": 0,
    "2025-12": 0,
@@ -1881,7 +1851,7 @@
    "2026-08": 11,
    "2026-09": 39,
    "2026-10": 74,
-   "2026-11": 20
+   "2026-11": 21
   }
  }
 }
